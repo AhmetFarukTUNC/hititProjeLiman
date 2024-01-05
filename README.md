@@ -28,6 +28,6 @@
 
 ┌──(root㉿kali)-[/home/kali/Desktop/projeAcikKaynak]
 
-└─# ./script.sh reset <mail>
+└─# ./script.sh reset atunc8402@gmail.com
 
 
