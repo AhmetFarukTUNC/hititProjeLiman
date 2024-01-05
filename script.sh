@@ -56,19 +56,25 @@ elif [ $1 == "help" ]; then
 
 
 
-# Komutu çalıştır
-sudo limanctl reset "$2"
 
-# Komutun başarıyla tamamlanıp tamamlanmadığını kontrol et
-if [ $? -eq 0 ]; then
-  echo "mail başarıyla sıfırlandı."
-else
-  echo "mail sıfırlama işlemi başarısız oldu."
-fi
 
 
 
 
 else
   echo "Kurulum yapılamadı."
+fi
+
+#Limanda kullanıcı mail adresinin değişmesi
+
+sudo limanctl reset "$2"
+
+if [ $? -eq 0 ]; then
+
+  echo "mail başarıyla sıfırlandı."
+
+else
+
+  echo "mail sıfırlama işlemi başarısız oldu."
+
 fi
